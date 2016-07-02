@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/RequestType"
+	xmlns:tns="http://www.example.org/RequestType" elementFormDefault="qualified">
+
+	<complexType name="RequestType">
+		<sequence>
+			<element name="HolaReq" type="string"></element>
+		</sequence>
+	</complexType>
+
+	
+
+	<element name="HolaRequest" type="tns:RequestType"></element>	
+
+</schema>

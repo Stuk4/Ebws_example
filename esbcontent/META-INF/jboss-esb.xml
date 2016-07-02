@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<jbossesb parameterReloadSecs="5"
+ xmlns="http://anonsvn.labs.jboss.com/labs/jbossesb/trunk/product/etc/schemas/xml/jbossesb-1.3.0.xsd"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://anonsvn.labs.jboss.com/labs/jbossesb/trunk/product/etc/schemas/xml/jbossesb-1.3.0.xsd http://anonsvn.jboss.org/repos/labs/labs/jbossesb/trunk/product/etc/schemas/xml/jbossesb-1.3.0.xsd">
+ <!-- https://<hostname>:<port>/<project_name>/ebws/<category>/<service>?wsdl  -->
+ <services>
+  <service category="ESBService" description="Ejemplo de ebws"
+   invmScope="GLOBAL" name="EbwsService">
+   <actions faultXsd="/Fault.xsd" inXsd="/Request.xsd"
+    mep="RequestResponse" outXsd="/Response.xsd" validate="true">
+    <action class="edu.cibertec.esb.ebws.ESBWSListenerAction"
+     name="EbwsPrinter" process="displayMessage"/>
+   </actions>
+  </service>
+ </services>
+</jbossesb>
