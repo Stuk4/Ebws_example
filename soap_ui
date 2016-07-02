@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header/>
+   <env:Body>
+      <res:HolaResponse xmlns:res="http://www.example.org/Response">
+         <res:HolaResp>Hola mundo</res:HolaResp>
+      </res:HolaResponse>
+   </env:Body>
+</env:Envelope>
